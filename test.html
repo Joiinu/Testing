@@ -1,0 +1,100 @@
+
+
+<style>
+    body h1 {
+    text-align: left;
+    Color: #003b6f;
+    border;
+  }
+
+  table {
+    text-align: left;
+    border-collapse: collapse; /* I did not like the space between the boxes so I collapsed them here */
+  }
+
+  table th {
+    text-align: left;/* This was done to make the Home table header align with the places */
+    background-color: #003b6f; /*Color was chosen due to it being the hex code for David Tennants Tardis color */
+    color: #FFF; /* Blue and white Tardis... need I say more? */
+    padding: 4px 30px 4px 8px; /* This size balance seemed to look the best*/
+  }
+
+  table td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+  }
+
+  table tr:nth-child(odd) td {
+    background-color: #e7edf0;
+  }
+
+  </style>
+
+
+<body>
+<!--Why not name it Doctor Who!? -->
+  <h1>
+    Doctor Who
+  </h1>
+  
+   <form action="/action_page.php">
+  First name: <input id = "Fname" type="text" name="fname"><br>
+  Last name: <input id = "Lname" type="text" name="lname"><br>
+       Home: <input id = "Home" type="text" name="home"><br>
+  <input id="enter" type="submit" onclick = "addId(
+      document.getElementById('Fname').value,
+      document.getElementById('Lname').value,
+      document.getElementById('Home').value)">
+  
+</form> 
+
+  <table id= "my_table">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Home</th>
+    </tr>
+    <!-- <tr>
+      <td>Rose</td>
+      <td>Tyler</td>
+      <td>Earth</td>
+    </tr>
+    <tr>
+      <td>Zoe</td>
+      <td>Heriot</td>
+      <td>Space Station W3</td>
+    </tr>
+    <tr>
+      <td>Jo</td>
+      <td>Grant</td>
+      <td>Earth</td>
+    </tr>
+    <tr>
+      <td>Leela</td>
+      <td>Null</td>
+      <td>Gallifrey</td>
+    </tr>
+    <tr>
+      <td>Romana</td>
+      <td>Null</td>
+      <td>Gallifrey</td>
+    </tr>
+    <tr>
+      <td>Clara</td>
+      <td>Oswald</td>
+      <td>Earth</td>
+    </tr>
+    <tr>
+      <td>Adric</td>
+      <td>Null</td>
+      <td>Alzarius</td>
+    </tr>
+    <tr>
+      <td>Susan</td>
+      <td>Foreman</td>
+      <td>Gallifrey</td>
+    </tr> -->
+
+  </table>
+    <script src="My_Code.js"></script>
+</body>
